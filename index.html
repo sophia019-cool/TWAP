@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>TWAP — The Whole Athlete Project</title>
+  <meta name="description" content="TWAP is a student-led initiative challenging mental health stigma and improving access to resources within student-athlete communities." />
+
+  <!-- Inter font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────── -->
+  <header id="site-header">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo">TWAP</a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#mission" class="nav-link">Mission</a></li>
+        <li><a href="#contact" class="nav-link">Get Involved</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu drawer -->
+    <div id="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#about"   class="mob-link">About</a></li>
+        <li><a href="#mission" class="mob-link">Mission</a></li>
+        <li><a href="#contact" class="mob-link">Get Involved</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO ─────────────────────────────────────────── -->
+    <section id="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Student-Led Mental Health Advocacy</p>
+        <h1>The Whole<br />Athlete Project</h1>
+        <p class="hero-sub">
+          Amplifying student-athlete voices to challenge mental health stigma
+          and build healthier, more supportive sports environments.
+        </p>
+        <a href="#contact" class="btn">Get Involved</a>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ─────────────────────────────────────────── -->
+    <section id="about">
+      <div class="container section-layout">
+        <div class="section-label">About</div>
+        <div class="section-body">
+          <h2>What is TWAP?</h2>
+          <p>
+            TWAP — The Whole Athlete Project — is a student-led initiative
+            dedicated to addressing mental health stigma in school athletic
+            systems. We believe that being a great athlete starts with being
+            a healthy person, and that no student should feel alone in their
+            mental health journey.
+          </p>
+          <p>
+            Through student-led advisory chapters, we bring together athletes,
+            coaches, and schools to create real, lasting change — from the inside out.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── GALLERY ─────────────────────────────────────────── -->
+    <section id="gallery">
+      <div class="container">
+        <div class="section-layout">
+          <div class="section-label">In Action</div>
+          <div class="section-body">
+            <h2>Our Community</h2>
+            <p>Student-athletes and advocates coming together to build something meaningful.</p>
+          </div>
+        </div>
+
+        <!-- Photo grid: 9 photos -->
+        <div class="photo-grid">
+
+          <!-- Row 1: wide field group + tall cheer team -->
+          <figure class="photo-cell photo-wide">
+            <img src="images/field-group.jpg"
+                 alt="Large group of student-athletes gathered on a football field at night" />
+          </figure>
+
+          <figure class="photo-cell photo-tall">
+            <img src="images/cheer-team.jpg"
+                 alt="Cheerleading team forming a pyramid in a gym, all smiling" />
+          </figure>
+
+          <!-- Row 1 col 3 + row 2 col 1-2 fill -->
+          <figure class="photo-cell">
+            <img src="images/event-girls-sign.jpg"
+                 alt="Four female student-athletes posing with a handmade TWAP sign" />
+          </figure>
+
+          <!-- Row 2: track group wide + survey phone -->
+          <figure class="photo-cell photo-wide">
+            <img src="images/team-lacrosse.jpg"
+                 alt="A large group of student-athletes giving thumbs up together on a track" />
+          </figure>
+
+          <!-- Row 3: field presentation wide + brochure -->
+          <figure class="photo-cell photo-wide">
+            <img src="images/field-presentation.jpg"
+                 alt="TWAP members presenting to a crowd of student-athletes sitting on a football field at night" />
+          </figure>
+
+          <figure class="photo-cell">
+            <img src="images/brochure-hands.jpg"
+                 alt="Hands holding a TWAP mental health guide brochure" />
+          </figure>
+
+          <!-- Row 4: three smaller squares -->
+          <figure class="photo-cell">
+            <img src="images/survey-phone.jpg"
+                 alt="Student filling out a TWAP mental health survey on their phone at an outdoor event" />
+          </figure>
+
+          <figure class="photo-cell">
+            <img src="images/event-boys-sign.jpg"
+                 alt="Three male student-athletes posing with a TWAP photo frame sign" />
+          </figure>
+
+          <figure class="photo-cell">
+            <img src="images/event-duo.jpg"
+                 alt="Two student-athletes smiling through a TWAP photo frame at a campus event" />
+          </figure>
+
+          <!-- Two new square photos -->
+          <figure class="photo-cell">
+            <img src="images/event-booth.jpg"
+                 alt="TWAP members at a campus booth with a Pre-Game Ritual poster covered in sticky notes" />
+          </figure>
+
+          <figure class="photo-cell">
+            <img src="images/event-boys-sign2.jpg"
+                 alt="Three male students posing with a TWAP photo frame sign at a campus event" />
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── MISSION ─────────────────────────────────────────── -->
+    <section id="mission">
+      <div class="container section-layout">
+        <div class="section-label">Mission</div>
+        <div class="section-body">
+          <h2>Our Mission</h2>
+          <!-- Exact mission statement as specified -->
+          <blockquote>
+            "Our mission is to amplify student-athlete voices by addressing
+            mental health stigma and improving access to mental health resources
+            within school athletic systems. Through student-led advisory chapters,
+            we empower athletes to identify challenges, propose solutions, and
+            advocate for healthier and more supportive sports environments."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─────────────────────────────────────────── -->
+    <section id="contact">
+      <div class="container section-layout">
+        <div class="section-label">Get Involved</div>
+        <div class="section-body">
+          <h2>Reach Out</h2>
+          <p>
+            Interested in starting a chapter, collaborating, or just learning more?
+            We'd love to hear from you.
+          </p>
+
+          <!--
+            FormSubmit — no backend needed.
+            Submissions are sent to thewholeathleteproject26@gmail.com.
+            First submission will require a one-time email confirmation.
+          -->
+          <form
+            id="contact-form"
+            action="https://formsubmit.co/thewholeathleteproject26@gmail.com"
+            method="POST"
+          >
+            <!-- FormSubmit config: disable captcha, redirect back to page -->
+            <input type="hidden" name="_captcha"     value="false" />
+            <input type="hidden" name="_subject"     value="New message from TWAP website" />
+            <input type="hidden" name="_next"        value="https://thewholeathleteproject.com/#contact" />
+            <input type="text"   name="_honey"       style="display:none" tabindex="-1" autocomplete="off" />
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@email.com" autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="What's on your mind?"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─────────────────────────────────────────── -->
+  <footer id="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">TWAP</span>
+      <p>The Whole Athlete Project &mdash; student-led, athlete-driven.</p>
+      <a
+        href="https://instagram.com/thewholeathlete.project"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-link"
+        aria-label="Follow TWAP on Instagram"
+      >
+        <!-- Inline SVG Instagram icon — no external dependency -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4.5"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+        @thewholeathlete.project
+      </a>
+      <p class="footer-copy">&copy; 2025 The Whole Athlete Project. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
