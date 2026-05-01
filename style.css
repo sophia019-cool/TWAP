@@ -270,6 +270,38 @@ blockquote {
   border-top: 1px solid var(--gray-200);
 }
 
+.chapter-callout {
+  background: var(--blue);
+  border: 1px solid var(--blue-mid);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.chapter-callout h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--blue-ink);
+  margin-bottom: 0.5rem;
+}
+
+.chapter-callout p {
+  margin-bottom: 1.5rem;
+  color: var(--gray-800);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--blue-ink);
+  border: 1.5px solid var(--blue-ink);
+}
+
+.btn-outline:hover {
+  background: var(--blue-ink);
+  color: var(--white);
+}
+
 /* Form */
 #contact-form {
   margin-top: 1.5rem;
