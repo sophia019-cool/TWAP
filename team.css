@@ -1,0 +1,192 @@
+/* ─────────────────────────────────────────────────────
+   TWAP — team.css
+   Styles specific to the Who We Are page (team.html)
+   Inherits all variables and base styles from style.css
+   ───────────────────────────────────────────────────── */
+
+/* ── Team Hero ──────────────────────────────────────── */
+#team-hero {
+  min-height: 42vh;
+  display: flex;
+  align-items: center;
+  padding-top: var(--nav-h);
+  background: linear-gradient(155deg, #fce7f3 0%, var(--white) 55%, #fdf4ff 100%);
+}
+
+.team-hero-content {
+  padding: 5rem 2rem 4rem;
+}
+
+/* ── Active nav state ───────────────────────────────── */
+.nav-link--active {
+  color: var(--blue-ink) !important;
+  background: #fce7f3;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Team grid section ──────────────────────────────── */
+#team-grid-section {
+  padding: 5rem 0 6rem;
+  background: var(--white);
+  border-top: 1px solid var(--gray-200);
+}
+
+/* Wider container so 4 cards fit comfortably */
+#team-grid-section .container {
+  max-width: 1100px;
+}
+
+/* Grid: 4 columns on desktop */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* ── Team Card ──────────────────────────────────────── */
+.team-card {
+  border-radius: var(--radius);
+  border: 1px solid var(--gray-200);
+  background: var(--white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 12px 32px rgba(107, 31, 63, 0.10),
+    0 2px 8px rgba(0, 0, 0, 0.06);
+  border-color: var(--blue-mid);
+}
+
+/* ── Photo block ────────────────────────────────────── */
+.card-photo-wrap {
+  position: relative;
+  width: 100%;
+  /* 4:5 aspect ratio — great for portrait photos */
+  padding-top: 125%;
+  overflow: hidden;
+  background: var(--gray-100);
+}
+
+.card-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .card-photo {
+  transform: scale(1.04);
+}
+
+/* Soft gradient overlay at bottom of photo */
+.card-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 55%,
+    rgba(252, 231, 243, 0.45) 100%
+  );
+  pointer-events: none;
+}
+
+/* ── Card text body ─────────────────────────────────── */
+.card-body {
+  padding: 1.5rem 1.75rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.card-role {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gray-400);
+  margin-bottom: 0.1rem;
+}
+
+.card-name {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--blue-ink);
+  letter-spacing: -0.3px;
+  margin-bottom: 0.6rem;
+  /* override global h2 bottom-margin */
+  margin-bottom: 0.6rem !important;
+}
+
+.card-bio {
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  line-height: 1.75;
+  margin-bottom: 0;
+}
+
+/* ── Decorative accent line under name ──────────────── */
+.card-name::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: var(--blue-mid);
+  border-radius: 2px;
+  margin-top: 0.55rem;
+  transition: width 0.3s ease;
+}
+
+.team-card:hover .card-name::after {
+  width: 56px;
+}
+
+/* ── CTA nudge below grid ───────────────────────────── */
+.team-cta {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.team-cta p {
+  font-size: 1rem;
+  color: var(--gray-600);
+  margin-bottom: 0;
+}
+
+/* ── Responsive ─────────────────────────────────────── */
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .team-hero-content {
+    padding: 4rem 2rem 3rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #team-grid-section {
+    padding: 3.5rem 0 4.5rem;
+  }
+}
