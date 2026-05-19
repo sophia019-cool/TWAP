@@ -90,6 +90,30 @@
   transform: scale(1.04);
 }
 
+/* Graceful placeholder when photo file is missing */
+.card-photo-wrap.photo-missing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #fce7f3, #fdf4ff);
+}
+
+.card-photo-wrap.photo-missing::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 38%, rgba(255,255,255,0.55) 28%, transparent 65%),
+    linear-gradient(145deg, #fce7f3, #fdf4ff);
+}
+
+.card-photo-wrap.photo-missing::after {
+  content: '👤';
+  position: absolute;
+  font-size: 4rem;
+  opacity: 0.35;
+}
+
 /* Soft gradient overlay at bottom of photo */
 .card-photo-overlay {
   position: absolute;
