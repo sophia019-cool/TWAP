@@ -212,6 +212,57 @@ section:nth-of-type(even) {
   transform: translateY(-1px);
 }
 
+/* Outlined button variant */
+.btn--outline {
+  background-color: transparent;
+  color: var(--blue-ink) !important;
+  border: 1.5px solid var(--blue-ink);
+}
+.btn--outline:hover {
+  background-color: var(--blue-ink);
+  color: var(--white) !important;
+}
+.btn--outline svg {
+  transition: transform 0.2s ease;
+}
+.btn--outline:hover svg {
+  transform: translate(2px, -2px);
+}
+
+/* Chapter lead inline block (home page contact section) */
+.chapter-lead-inline {
+  margin-top: 2.5rem;
+  max-width: 600px;
+}
+
+.chapter-lead-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  color: var(--gray-400);
+  font-size: 0.85rem;
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.chapter-lead-divider::before,
+.chapter-lead-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+
+.chapter-lead-inline-label {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
 /* ── Section Structure (Chapters) ───────────────────── */
 .section-layout {
   display: grid;
@@ -307,10 +358,7 @@ blockquote::before {
   aspect-ratio: 1.8 / 1;
 }
 
-.photo-tall {
-  grid-row: span 2;
-  aspect-ratio: 1 / 1.6;
-}
+/* photo-tall removed — caused blank grid cells */
 
 /* Normal square cell ratios */
 .photo-cell:not(.photo-wide):not(.photo-tall) {
